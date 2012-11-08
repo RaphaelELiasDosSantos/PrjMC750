@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>ViveComp</title>
+  <link href='http://fonts.googleapis.com/css?family=Stalinist+One' rel='stylesheet' type='text/css'>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo"><h1 >ViveComp</h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">Início</a></li>
+          <li><a href="default.html">Sobre</a></li>
+          <li><a href="default.html">Ranking</a></li>
+          <li><a href="default.html">Doe</a></li>
+          <li><a href="default.html">Leilão</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <!-- Insira aki o que tiver de novo na página-->
+    </div>
+    <footer>
+      <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>
