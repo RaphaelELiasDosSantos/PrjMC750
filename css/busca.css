@@ -1,0 +1,27 @@
+form fieldset {
+        position: absolute;
+        left: 800px;
+        top: 250px;
+        background: #555;
+        border: 2px solid #555;
+        border-radius: 10px;
+        margin: 10px;
+        width: 250px;
+}
+
+form fieldset * {
+        border: 0;
+        font: 10px bold "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+form fieldset input {
+        width: 190px;
+        height: 20px;
+        border-radius: 10px;
+}
+
+form fieldset button {
+        background: #555;
+        color: #fff;
+        width: 35px;
+}
