@@ -144,8 +144,10 @@ header {
   float: left;
   height: 100px;
   background: transparent;
-  padding: 0 0 10px 0;
+  padding: 40px 0 0 0;
+  font-size: 30px;
 }
+
 
 #logo h1 { 
   font: normal 440% , arial, sans-serif;
@@ -374,17 +376,14 @@ ul img {
   color: #FFF;}
 
 nav { 
-  height: 80px;
-  width: 750px;
-  margin: 1px auto 0 auto;
-  float: right;
-  padding: 35px 0 20px 0;
+  width: 450px;
+  float: left;
+  padding: 100px 0 0 0;
 } 
 
 /* from here: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers */
 .lavaLampWithImage {
   position: relative;
-  height: 40px;
   padding: 15px 5px 15px 0;
   margin: 10px 0 0 0;
   overflow: hidden;
