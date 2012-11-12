@@ -20,6 +20,14 @@ body {
   background-image: url("../images/background.jpg");
 }
 
+.titleDiv{
+  background: #FFF;
+  width: auto;
+  position: absolute;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 .divClass{
   background: #FEFEFE;
   opacity: 0.65
@@ -497,7 +505,18 @@ nav {
 .pagination li.current a {
   background-position:0 -12px;
 }
+
+#botaoIndex {
+  top:1050px;
+}
+
+#botaoSobre{
+  top:960px;
+  left:700px;
+}
+
 .classname {
+  position: absolute;
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
