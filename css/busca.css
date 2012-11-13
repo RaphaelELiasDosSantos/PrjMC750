@@ -1,6 +1,6 @@
 form fieldset {
-        position: absolute;
-        left: 800px;
+        position: relative;
+        left: 500px;
         top: 250px;
         background: #555;
         border: 2px solid #555;

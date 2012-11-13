@@ -20,6 +20,11 @@ body {
   background-image: url("../images/background.jpg");
 }
 
+.headerClass{
+  background: #FFF;
+  padding: 1em 0.7em;
+}
+
 .titleDiv{
   background: #FFF;
   width: auto;
@@ -507,16 +512,16 @@ nav {
 }
 
 #botaoIndex {
-  top:1050px;
+ top:-40px;
 }
 
 #botaoSobre{
-  top:960px;
-  left:700px;
+  top: -50px;
+  left: 550px;
 }
 
 .classname {
-  position: absolute;
+  position: relative;
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
