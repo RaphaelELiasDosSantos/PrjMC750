@@ -37,41 +37,17 @@
     </form>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index_logado.html">Início</a></li>
+          <li><a href="index_logado.html">Início</a></li>
           <li><a href="Sobre_logado.html">Sobre</a></li>
-          <li><a href="default.html">Ranking</a></li>
-          <li><a href="Doe_logado.html">Doe</a></li>
-          <li><a href="default.html">Leilão</a></li>
+          <li><a href="default_logado.html">Ranking</a></li>
+          <li class="current"><a href="Doe_logado.html">Doe</a></li>
+          <li><a href="default_logado.html">Leilão</a></li>
         </ul>
       </nav>
     </header>
     <div id="site_content">
-      <ul class="slideshow">
-        <li class="show"><img width="950" height="350" src="images/1.jpg" alt="&quot;ViveComp.&quot;" /></li>
-        <li><img width="950" height="350" src="images/2.jpg" alt="&quot;Instituto de Computação da Unicamp.&quot;" /></li>
-        <li><img width="950" height="350" src="images/3.jpg" alt="&quot;Unicamp- Universidade Estadual de Campinas.&quot;" /></li>
-      </ul>
-      <div id="sidebar_container">
-        <div class="sidebar" id="Colaboration">
-          <h3>Colaboradores</h3>
-          <ul>
-            <li><a href="http://www.caco.ic.unicamp.br">CACo</a></li>
-            <li><a href="http://www.aaacec.com">AAACEC</a></li>
-            <li><a href="http://www.ic.unicamp.br">IC - Instituto de Computação</a></li>
-            <li><a href="http://www.conpec.com.br">CONPEC</a></li>
-          </ul>
-        </div>
-      </div>
-      <div width="20"><p>  </p></div>
-      <div id="content" class="divClass" style="padding: 1em 0.7em">
-        <h1>Projeto ViveComp</h1>
-        <p>As origens do Instituto remontam a 1969, quando foi criado na UNICAMP um curso de Bacharelado em Ciência da Computação. Esse curso foi o primeiro do gênero no Brasil, e serviu de modelo para inúmeros outros programas de graduação em todo país. Ainda naquele ano, foi criado o Departamento de Ciência da Computação (DCC) dentro do Instituto de Matemática, Estatística e Ciência da Computação (IMECC). Em março de 1996, o Departamento deixou de fazer parte do IMECC, e tornou-se a 20ª Unidade de ensino e pesquisa da UNICAMP.
-          Agora o ViveComp tem a missão de melhora a vivência na comunidade do IC e precisa de sua ajuda.
-          Saiba como clicando em <a href="Sobre_logado.html">Sobre.</a>
-        </p>
-      </div>
+      <!-- Insira aki o que tiver de novo na página-->
     </div>
-    <a href="default.html" id="botaoIndex" class="classname"`>Participe!</a>
     <footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
     </footer>
@@ -91,11 +67,11 @@
 	  $('.form-2').submit(function(ev) {
 		ev.preventDefault();
 		location.href = "index.html";
-	  });
-	  
-	  $("#logo").click(function(){
+	  });	
+
+      $("#logo").click(function(){
 		location.href = "index_logado.html";
-	  });
+	  });	  
 	  
     });
   </script>
