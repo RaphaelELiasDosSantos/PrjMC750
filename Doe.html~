@@ -38,46 +38,44 @@
     <form action="busca.html" method="get">
         <fieldset>
             <input type="text" />
-            <button type="submit"><a href="busca.html" style="color: #FFF">Buscar</a></button>
+            <button type="submit"><a href="#" style="color: #FFF">Buscar</a></button>
         </fieldset>
     </form>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="Sobre.html">Sobre</a></li>
           <li><a href="ranking.html">Ranking</a></li>
-          <li><a href="Doe.html">Doe</a></li>
+          <li class="current"><a href="Doe.html">Doe</a></li>
           <li><a href="leilao.html">Leilão</a></li>
         </ul>
       </nav>
     </header>
-    <div id="site_content">
-      <ul class="slideshow">
-        <li class="show"><img width="950" height="350" src="images/1.jpg" alt="&quot;ViveComp.&quot;" /></li>
-        <li><img width="950" height="350" src="images/2.jpg" alt="&quot;Instituto de Computação da Unicamp.&quot;" /></li>
-        <li><img width="950" height="350" src="images/3.jpg" alt="&quot;Unicamp- Universidade Estadual de Campinas.&quot;" /></li>
-      </ul>
-      <div id="sidebar_container">
-        <div class="sidebar" id="Colaboration">
-          <h3>Colaboradores</h3>
-          <ul>
-            <li><a href="http://www.caco.ic.unicamp.br">CACo</a></li>
-            <li><a href="http://www.aaacec.com">AAACEC</a></li>
-            <li><a href="http://www.ic.unicamp.br">IC - Instituto de Computação</a></li>
-            <li><a href="http://www.conpec.com.br">CONPEC</a></li>
-          </ul>
-        </div>
-      </div>
-      <div width="20"><p>  </p></div>
-      <div id="content" class="divClass" style="padding: 1em 0.7em">
-        <h1>Projeto ViveComp</h1>
-        <p>As origens do Instituto remontam a 1969, quando foi criado na UNICAMP um curso de Bacharelado em Ciência da Computação. Esse curso foi o primeiro do gênero no Brasil, e serviu de modelo para inúmeros outros programas de graduação em todo país. Ainda naquele ano, foi criado o Departamento de Ciência da Computação (DCC) dentro do Instituto de Matemática, Estatística e Ciência da Computação (IMECC). Em março de 1996, o Departamento deixou de fazer parte do IMECC, e tornou-se a 20ª Unidade de ensino e pesquisa da UNICAMP.
-          Agora o ViveComp tem a missão de melhora a vivência na comunidade do IC e precisa de sua ajuda.
-          Saiba como clicando em <a href="Sobre.html">Sobre.</a>
-        </p>
-      </div>
+          <div id="site_content" class="headerClass">
+      <div ><h3 class="hClass" >Doe</h3></br></div>
     </div>
-    <a href="default.html" id="botaoIndex" class="button">Participe!</a>
+
+    <div class="divClass" style="padding: 1em 0.7em">
+        <div style="float: left; width: 50%; border-right: solid #333">
+                <p>
+                  Para fazer um doação basta inserir valor e quem está realaziando esta doação:<br>
+                Valor: <input type="text" name="fname" value="R$ "><br>
+                Anônimo: <input type="radio" name="Op" value="Sim" />
+                Sim
+                <input type="radio" name="Op" value="nao" />
+                Não
+                <br />
+                Formas de Pagamento:<br>
+                </p><br><br><br>
+        </div>
+        <div style="float: right; width: 45%">
+	<p style="font-size: 36px">Participe também do </p>
+      </div> 
+        <div style="clear: both"></div>
+    </div>
+	<div style="position: relative; top: -70px; left:25px"><a href="default.html"><img src="images/Paypal-botao.png" width="100px" height="50px"/></a></div>
+        <div style="position: relative; top: -124px; left:150px"><a href="default.html"><img src="images/botao_pagseguro.gif" width="100px" height="50px"/></a></div>
+	<a href="default.html" id="botaoLeilao" class="button2">Leilão</a>  
     <footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
     </footer>
@@ -94,10 +92,10 @@
         speed: 700
       });
 	  
-	  $(".form-2").submit(function(ev) {
+	  $('.form-2').submit(function(ev) {
 		ev.preventDefault();
-		location.href = "index_logado.html";
-	  });
+		location.href = "Doe_logado.html";
+	  });	
 
 	  $("#logo").click(function(){
 		location.href = "index.html";

@@ -40,7 +40,7 @@
     <form action="busca_logado.html" method="get">
         <fieldset>
             <input type="text" />
-            <button type="submit"><a href="busca.html" style="color: #FFF">Buscar</a></button>
+            <button type="submit"><a href="" style="color: #FFF">Buscar</a></button>
         </fieldset>
     </form>
       <nav>

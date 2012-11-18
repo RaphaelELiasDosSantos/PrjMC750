@@ -10,8 +10,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/login.css" />
   <link rel="stylesheet" type="text/css" href="css/busca.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
 </head>
 
 <body>
@@ -35,54 +35,72 @@
 			</p>       
 		  </form>  
 	  </div>
-	 <form action="busca.html" method="get">
+    <form action="busca.html" method="get">
         <fieldset>
             <input type="text" />
-            <button type="submit"><a href="busca.html" style="color: #FFF">Buscar</a></button>
+            <button type="submit"><a href="#" style="color: #FFF">Buscar</a></button>
         </fieldset>
     </form>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-          <li><a href="index.html">Início</a></li>
-          <li class="current"><a href="Sobre.html">Sobre</a></li>
+         <li><a href="index.html">Início</a></li>
+          <li><a href="Sobre.html">Sobre</a></li>
           <li><a href="ranking.html">Ranking</a></li>
           <li><a href="Doe.html">Doe</a></li>
           <li><a href="leilao.html">Leilão</a></li>
         </ul>
       </nav>
     </header>
-    <div id="site_content" class="headerClass">
-      <div ><h3 class="hClass">Sobre o ViveComp</h3></br></div>
+    <div id="site_content">
+      <!-- Insira aki o que tiver de novo na página-->
     </div>
-
-    <div class="divClass" style="padding: 1em 0.7em">
-        <div style="float: left; width: 50%; border-right: solid #333">
-          <iframe width="420" height="315" src="http://www.youtube.com/embed/ozhR3gBEP90" frameborder="0" allowfullscreen></iframe>
-          <p aling="center">A história da Unicamp</p><br><br><br><br><br><br><br><br><br><br><br>
-        </div> 
-        <div style="float: right; width: 45%"><p>
-          O ViveComp é um sistema que visa dar suporte á iniciativa de alguns ex-alunos do Instituo de Computação da Unicamp de arrecadar fundos por meio de doaçoes, com o fim de construir um espaço de vivência dentro do campus da Unicamp para melhorar a experiência e estadia da comunidade dentro deste ambiente.
-          Por meio deste projeto, que conta com o apoio da Atlética de Computação(AAACEC) e do Centro Acadêmico da Computação(CACo) pretendemos criar um ambiente onde a comunidade passa interagir e permanecer por mais tempo dentro do instituto.
-          No site ViveComp, será possível rever antigos amigos, criar dispustas entre cursos e turmas, promover o nome da sua empresa, dentre outro benefícios. Aqui você encontrará todas as notícias relacionadas ao projeto, conforme as novidades forem surgindo.
-          Faça o cadastro e participe! Em apenas 3 passos você já pode contribuir com a comunidade do IC, reencontrar antigos amigos, participar do leilão de salas e subir no ranking pessoal e da sua empresa!
-        </p>
-        <br>
-        <br>
-      </div> 
-        <div style="clear: both"></div>
+    <div id="accordion">
+    <h3>Alunos (3)</h3>
+    <div>
+	<ul type=disc>
+	   <li>Fulano  <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>Cicrano <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>Deltrano <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
     </div>
-    <a href="default.html" id="botaoSobre" class="button"`>Andamento do projeto / Valor arrecadado</a>
+    <h3>Turmas (2)</h3>
+    <div>
+	<ul type=disc>
+	   <li>CC01 <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>EC02 <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+    <h3>Empresas (1)</h3>
+    <div>
+	<ul type=disc>
+	   <li>Empresa de Tal <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+    <h3> Curso (2) </h3>
+    <div>
+	<ul type=disc>
+	    <li>Ciências da Computação <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	    <li>Engenharia da Computação <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+</div>
     <footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+ 
+  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>     
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
+
   <script type="text/javascript">
     $(function() {
+      $( "#accordion" ).accordion({
+            heightStyle: "content"
+        });
+
       $("#lava_menu").lavaLamp({
         fx: "backout",
         speed: 700
@@ -90,14 +108,14 @@
 	  
 	  $('.form-2').submit(function(ev) {
 		ev.preventDefault();
-		location.href = "Sobre_logado.html";
+		location.href = "busca_logado.html";
 	  });	
 
 	  $("#logo").click(function(){
 		location.href = "index.html";
 	  });
 	  
-  });
+    });
   </script>
 </body>
 </html>

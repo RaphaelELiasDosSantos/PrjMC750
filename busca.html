@@ -10,8 +10,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/login.css" />
   <link rel="stylesheet" type="text/css" href="css/busca.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+
 </head>
 
 <body>
@@ -38,7 +38,7 @@
     <form action="busca.html" method="get">
         <fieldset>
             <input type="text" />
-            <button type="submit">Buscar</button>
+            <button type="submit"><a href="busca.html" style="color: #FFF">Buscar</a></button>
         </fieldset>
     </form>
       <nav>
@@ -54,17 +54,53 @@
     <div id="site_content">
       <!-- Insira aki o que tiver de novo na página-->
     </div>
+    <div id="accordion">
+    <h3>Alunos (3)</h3>
+    <div>
+	<ul type=disc>
+	   <li>Fulano  <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>Cicrano <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>Deltrano <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+    <h3>Turmas (2)</h3>
+    <div>
+	<ul type=disc>
+	   <li>CC01 <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	   <li>EC02 <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+    <h3>Empresas (1)</h3>
+    <div>
+	<ul type=disc>
+	   <li>Empresa de Tal <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+    <h3> Curso (2) </h3>
+    <div>
+	<ul type=disc>
+	    <li>Ciências da Computação <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	    <li>Engenharia da Computação <a href="perfil.html"><img src="images/lupa-busca.gif"/></a></li>
+	</ul>
+    </div>
+</div>
     <footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
     </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
+ 
+  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>     
   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
+
   <script type="text/javascript">
     $(function() {
+      $( "#accordion" ).accordion({
+            heightStyle: "content"
+        });
+
       $("#lava_menu").lavaLamp({
         fx: "backout",
         speed: 700
@@ -72,7 +108,7 @@
 	  
 	  $('.form-2').submit(function(ev) {
 		ev.preventDefault();
-		location.href = "default_logado.html";
+		location.href = "busca_logado.html";
 	  });	
 
 	  $("#logo").click(function(){
