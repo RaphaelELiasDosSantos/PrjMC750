@@ -10,14 +10,16 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/login.css" />
   <link rel="stylesheet" type="text/css" href="css/busca.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
+  <link rel="stylesheet" href="http://jquerytools.org/media/css/tabs.css"
+      type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://jquerytools.org/media/css/tabs-panes.css"
+      type="text/css" media="screen" />
+  </head>
 
 <body>
   <div id="main">
     <header>
-      <div id="logo"><h1 >ViveComp</h1></div>
+     <div id="logo"><h1 >ViveComp</h1></div>
 	  <div id="loginDiv">
 		  <form class="form-2">
 			<h1><span class="log-in">Log in</span></h1>
@@ -34,8 +36,8 @@
 				<input type="submit" name="submit" value="Log in" id="login1">
 			</p>       
 		  </form>  
-	  </div>
-    <form action="busca.html" method="get">
+	  </div> 
+    <form action="busca_logado.html" method="get">
         <fieldset>
             <input type="text" />
             <button type="submit">Buscar</button>
@@ -43,7 +45,7 @@
     </form>
       <nav>
         <ul class="lavaLampWithImage" id="lava_menu">
-         <li><a href="index.html">Início</a></li>
+          <li><a href="index.html">Início</a></li>
           <li><a href="Sobre.html">Sobre</a></li>
           <li class="current"><a href="ranking.html">Ranking</a></li>
           <li><a href="Doe.html">Doe</a></li>
@@ -55,7 +57,30 @@
       <div ><h3 class="hClass" >Ranking</h3></br></div>
     </div>
 
-    <div class="divClass" style="padding: 1em 0.7em"></div>
+    <div class="divClass" style="padding: 1em 0.7em">
+	<p> Aqui você pode ver os maiores doadores do ViveComp, o curso que mais fez doações e também a empresa que mais colaborou com o IC.</p>	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    <div style="position: relative; top: -480px; left: 50px">
+    <ul class="tabs" style="width: 800px">
+	<li><a href="#">Por Turma</a></li>
+	<li><a href="#">Por Empresa</a></li>
+	<li><a href="#">Individual</a></li>
+    </ul>
+ 
+<!-- tab "panes" -->
+   <div class="panes">
+	<div style="width: 800px; height: 400px">
+	 <p>>>>>>>>>>>>>>> inseriar gráfico das turmas aki</p>
+	</div>  
+	<div style="width: 800px; height: 400px">
+	<p>>>>>>>>>>>>>>> inseriar gráfico das empresas aki</p>
+	</div>
+  	<div style="width: 800px; height: 400px">
+	<p>>>>>>>>>>>>>>> inseriar gráfico do aluno aki </p>
+	</div>
+   </div>
+   </div>
 
     <footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
@@ -63,12 +88,17 @@
   </div>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
   <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
+   <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+
   <script type="text/javascript">
     $(function() {
-      $("#lava_menu").lavaLamp({
+     
+     $("ul.tabs").tabs("div.panes > div");
+
+     
+     $("#lava_menu").lavaLamp({
         fx: "backout",
         speed: 700
       });
@@ -78,9 +108,9 @@
 		location.href = "ranking_logado.html";
 	  });	
 
-	  $("#logo").click(function(){
-		location.href = "index.html";
-	  });
+      $("#logo").click(function(){
+		location.href = "index_logado.html";
+	  });	  
 	  
     });
   </script>
