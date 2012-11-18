@@ -53,9 +53,12 @@
     </header>
     <div id="site_content">
       <!-- Insira aki o que tiver de novo na página-->
-	  <div id="breadcrumbs" style="background-image: url(images/breadcrumbs_cadastro.png);" />
+	  <div id="breadcrumbs" style="background-image: url(images/breadcrumbs_cadastro.png);"></div>
+	  <div>
+		<img src="images/Facebook_icon.png" id="facebook_icon"></img>
+	  </div>
     </div>
-    <footer>
+	<footer>
       <p><font size="2"> Desenvolvido pelo <a href="https://sites.google.com/site/mc750grupo9/">Grupo 9</a> : Amadeu Bonfante, Guilherme Henrique Nunes, Davi Albernaz Lameiro da Costa, Milton Akio Ide Júnior e Douglas Afonso de Sousa Costa.</font></p>
     </footer>
   </div>
@@ -78,6 +81,10 @@
 
 	  $("#logo").click(function(){
 		location.href = "index.html";
+	  });
+	  
+	  $("#facebook_icon").click(function(){
+		location.href = "default_logado.html";
 	  });
 	  
     });

@@ -212,6 +212,12 @@ div #site_content #breadcrumbs{
 	margin-left: 50px;
 }
 
+#facebook_icon{
+	width: 200px;
+	margin: 50px 0 50px 50px;
+	cursor: pointer;
+}
+
 #sidebar_container { 
   float: right;
   width: 250px;
