@@ -205,6 +205,13 @@ header {
   border-bottom: 0;
 } 
 
+div #site_content #breadcrumbs{
+	height: 60px;
+	background: transparent no-repeat left center;
+	background-size: 100%;
+	margin-left: 50px;
+}
+
 #sidebar_container { 
   float: right;
   width: 250px;
@@ -256,11 +263,10 @@ footer {
   width: 950px;
   font: normal 130% 'News Cycle',  arial, sans-serif;
   height: 90px;
-  padding: 20px 0 5px 0;
   text-align: center; 
   color: #222;
   background: #FFF;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 footer p { 
@@ -408,9 +414,9 @@ nav {
 .lavaLampWithImage {
   position: relative;
   padding: 15px 5px 15px 0;
-  margin: 10px 0 0 0;
+  margin: 10px 0 40px 0;
   overflow: hidden;
-  float: right;
+   border-bottom: 1px solid white;
 }
 
 .lavaLampWithImage li {
@@ -596,4 +602,3 @@ top:2px;
 cursor:pointer;
 top:2px;
 }
-
