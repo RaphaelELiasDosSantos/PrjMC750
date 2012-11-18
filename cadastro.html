@@ -54,8 +54,23 @@
     <div id="site_content">
       <!-- Insira aki o que tiver de novo na página-->
 	  <div id="breadcrumbs" style="background-image: url(images/breadcrumbs_cadastro.png);"></div>
-	  <div>
+	  <div class="divClass" style= "height:500px;">
+		<p class="introText">O primeiro passo para contribuir com a comunidade do IC é se cadastrar. Você pode utilizar sua conta do Facebook ou informar poucos dados para começar. É rápido !</p>
 		<img src="images/Facebook_icon.png" id="facebook_icon"></img>
+		<form class="form-2" id="form-cadastro">
+			<h1><span class="log-in">Cadastro</span></h1>
+				<label for="login"><i class="icon-user"></i>Nome:</label>
+				<input type="text" name="login" placeholder="Nome">
+				<label for="email"><i class="icon-lock"></i>E-mail</label>
+				<input type="text" name="email" placeholder="E-mail"> 
+				<label for="password"><i class="icon-lock"></i>Senha</label>
+				<input type="password" name="password" placeholder="Senha" class="showpassword">      
+				<label for="password"><i class="icon-lock"></i>Confirmar Senha</label>
+				<input type="password" name="password" placeholder="Senha" class="showpassword"> 
+				<p class="clearfix"> 			
+					<input type="submit" name="submit" value="Confirmar" id="login1">
+				</p> 
+		  </form>
 	  </div>
     </div>
 	<footer>
@@ -85,6 +100,11 @@
 	  
 	  $("#facebook_icon").click(function(){
 		location.href = "default_logado.html";
+	  });
+	  
+	  $("#form-cadastro").click(function(ev){
+		ev.preventDefault();
+		alert("a");
 	  });
 	  
     });

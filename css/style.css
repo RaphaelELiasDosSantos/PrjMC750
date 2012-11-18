@@ -43,8 +43,7 @@ body {
 }
 
 .divClass{
-  background: #FEFEFE;
-  opacity: 0.65
+  background-color: rgba(255,255,255,0.65)
 }
 
 p { 
@@ -209,12 +208,17 @@ div #site_content #breadcrumbs{
 	height: 60px;
 	background: transparent no-repeat left center;
 	background-size: 100%;
-	margin-left: 50px;
+	margin-left: 90px;
+	margin-bottom: 40px;
+}
+
+.introText{
+	padding: 30px 40px 0 40px;
 }
 
 #facebook_icon{
 	width: 200px;
-	margin: 50px 0 50px 50px;
+	margin: 90px 0 50px 70px;
 	cursor: pointer;
 }
 
@@ -350,6 +354,10 @@ footer a:hover {
   width: 14px;
   border: 0;
   background: none;
+}
+
+#form-cadastro{
+	margin: 40px 70px 0 0;
 }
 
 table { 
