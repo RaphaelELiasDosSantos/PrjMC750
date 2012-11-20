@@ -209,7 +209,7 @@ div #site_content #breadcrumbs{
 	background: transparent no-repeat left center;
 	background-size: 100%;
 	margin-left: 90px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .introText{
@@ -423,7 +423,7 @@ nav {
   float: left;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 } 
 
 /* from here: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers */
