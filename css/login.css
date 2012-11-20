@@ -221,6 +221,15 @@
     margin: -1px 5px 0 1px;
 }
 
+.form-2-logado{
+	height: 150px;
+}
+
 #loginDiv{
 	margin-right: 10px;
+}
+
+.form-2-logado h1 {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
 }
